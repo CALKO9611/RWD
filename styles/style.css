@@ -46,7 +46,7 @@ input[type="search"] {
 }
 
 .searchForm__group .formInput {
-  margin-right:i var(--spacng-xs);
+  margin-right: var(--spacing-xs);
 }
 
 .searchForm__group .formInput__input {
@@ -83,6 +83,13 @@ input[type="search"] {
   background: transparent;
   color: var(--secondary-color);
   border: 1px solid currentColor;
+}
+
+/* 공통 메인 메뉴 */
+.menu__link {
+  display: block;
+  font-size: var(--text-md);
+  font-weight: 700;
 }
 
 /* 모바일 디바이스 (Mobile Device) */
@@ -127,6 +134,7 @@ input[type="search"] {
   .button--burgerBarTop,
   .button--burgerBarMiddle,
   .button--burgerBarBottom {
+    /* pointer-events: none; */
     position: absolute;
     width: 100%;
     height: 20%;
@@ -149,7 +157,7 @@ input[type="search"] {
     top: 100%;
     transform: translateY(-100%);
   }
-  
+
   .button--burger.is--active .button--burgerBarTop {
     top: 50%;
     transform: translateY(-50%) rotate(45deg);
@@ -162,8 +170,33 @@ input[type="search"] {
   .button--burger.is--active .button--burgerBarBottom {
     top: 50%;
     transform: translateY(-50%) rotate(-45deg);
-  }  
-  
+  }
+
+  /* 모베알 메인 메뉴 */
+  .menu__list {
+    background: var(--accent-opacity-color);
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100vh;
+    backdrop-filter: blur(4px);
+    padding: var(--spacing-lg);
+    transform: translateX(-150%);
+  }
+
+  .menu__item {
+    border-bottom: 1px solid var(--silver);
+  }
+
+  .menu__link {
+    padding: var(--spacing-xs);
+  }
+
+  .menu.is--active .menu__list {
+    transform: none;
+  }
 }
 
 /* 데스크탑 디바이스 (Desktop Device) */
@@ -173,7 +206,6 @@ input[type="search"] {
     max-width: var(--container-width);
     margin-left: auto;
     margin-right: auto;
-    background-color: gold;
   }
 
   /* 데스크탑 로고 */
@@ -197,21 +229,28 @@ input[type="search"] {
     display: none;
   }
 
-  /* 데스크탑 메인메뉴 */
-  .menu{
-
+  /* 데스크탑 메인 메뉴 */
+  .menu {
+    background: var(--secondary-color);
+    padding: var(--spacing-base) var(--spacing-lg);
   }
 
-  .menu__list{
-
+  .menu__list {
+    max-width: var(--container-width);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  .menu__item{
-
-  }
-
-  .menu__link{
-
+  .menu__link {
+    padding: var(--spacing-md) var(--spacing-lg);
+    color: var(--white);
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-shadow: 1px 1px 0 var(--black), -1px -1px 0 var(--black);
   }
 }
 
