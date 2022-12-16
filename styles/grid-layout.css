@@ -76,4 +76,9 @@ background: SandyBrown;
   .container {
     grid-template-columns: repeat(4, 1fr);
   }
+  .group1{
+    grid-row-start: 3;
+    grid-column-start: 2;
+    grid-column-end: span 3;
+  }
 }
