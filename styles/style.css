@@ -154,7 +154,7 @@ input[type="search"] {
     top: 50%;
     transform: translateY(-50%) rotate(45deg);
   }
-  
+
   .button--burger.is--active .button--burgerBarMiddle {
     transform: translate(-150%, -50%);
   }
@@ -195,6 +195,23 @@ input[type="search"] {
   /* 데스크탑 메인메뉴 제어버튼 */
   .button--burger {
     display: none;
+  }
+
+  /* 데스크탑 메인메뉴 */
+  .menu{
+
+  }
+
+  .menu__list{
+
+  }
+
+  .menu__item{
+
+  }
+
+  .menu__link{
+
   }
 }
 
