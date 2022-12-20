@@ -263,6 +263,34 @@ input[type="search"] {
   grid-area: twitter;
 }
 
+.twitter__title{
+
+}
+.twitter__container{
+
+}
+.twitter__userInfo{
+
+}
+.twitter__userName{
+
+}
+.twitter__userId{
+
+}
+.twitter__userProfile{
+
+}
+.twitter__userProfileImage{
+
+}
+.twitter__summary{
+
+}
+.twitter__date{
+
+}
+
 /* 모바일 디바이스 (Mobile Device) */
 @media (min-width: 320px) and (max-width: 768px) {
   /* 모바일 헤더 */
